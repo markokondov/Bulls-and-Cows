@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>290</x>
+      <y>20</y>
+      <w>490</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>BullsAndCows
+--
+- round: int
+- computer: Computer
+- user: User
+- secretCodeFromUser: String
+- secretCodeFromComputer: String
++ MAX_ROUNDS: int
++ CODE_LENGTH: int
+- isFinished: boolean
+- playFromFile: boolean
+- preWrittenInput: File
+--
++ setPlayFromFile(): void
++ processFile(): void
++ createUser(): void
++ setDifficulty(): void
++ numberOfBullsAndCows(guess: String, code: String, isBull: boolean): int
++ processFileGuess(file: File): boolean
++ processUserGuess(isFile: Boolean): boolean
++ saveGame(): void
++ compareGuess(guess: String, code: String): boolean
++ playRound(): void
++ start(): void
++ main(): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>90</x>
+      <y>400</y>
+      <w>220</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>/+Computer/
+--
+# secretCode: String
+# prevGuesses: List&lt;String&gt;
+# bulls: List&lt;Integer&gt;
+# cows: List&lt;Integer&gt;
+--
++ generateRandomCode(): String
+/+ makeGuess(): String/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>600</y>
+      <w>160</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>EasyAI
+--
+
+--
++ makeGuess(): String
++ toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>600</y>
+      <w>160</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>MediumAI
+--
+
+--
++ makeGuess(): String
++ toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>390</x>
+      <y>600</y>
+      <w>400</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>HardAI
+--
+- possibleCodes: List&lt;String&gt;
+--
+- generateAllPossibleCodes(): void
+- isValidCode(code: String): boolean
++ makeGuess(): String
+- prune(code: String, numBulls: int, numCows: int): void
++ toString(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>410</y>
+      <w>280</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>+User
+--
+- name: String
+- secretCode: String
+- prevGuesses: List&lt;String&gt;
+- bulls: List&lt;Integer&gt;
+- cows: List&lt;Integer&gt;
+--
++ setCode(): void
+- makeGuess(): String
+- validCode(guess: String): boolean
+- allNumbers(guess: String): boolean
+- areRepeats(guess: String): boolean
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>90</x>
+      <y>530</y>
+      <w>80</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>60.0;10.0;60.0;40.0;10.0;40.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>170</x>
+      <y>530</y>
+      <w>100</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;80.0;50.0;80.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>270</x>
+      <y>530</y>
+      <w>230</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;210.0;50.0;210.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>200</x>
+      <y>370</y>
+      <w>230</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;30.0;10.0;20.0;210.0;20.0;210.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>710</x>
+      <y>370</y>
+      <w>240</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=-
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;20.0;220.0;20.0;220.0;40.0</additional_attributes>
+  </element>
+</diagram>

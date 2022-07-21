@@ -1,0 +1,48 @@
+Bulls and Cows game - Marko vs the computer
+Selected difficulty: Easy
+Your code: 345
+Computer's code: 690
+---
+Round 1
+Marko guessed: 123
+They got 0 bulls and 0 cows
+The computer guessed: 289
+They got 0 bulls and 0 cows
+---
+Round 2
+Marko guessed: 456
+They got 0 bulls and 1 cows
+The computer guessed: 731
+They got 0 bulls and 1 cows
+---
+Round 3
+Marko guessed: 789
+They got 0 bulls and 1 cows
+The computer guessed: 431
+They got 0 bulls and 2 cows
+---
+Round 4
+Marko guessed: 057
+They got 0 bulls and 1 cows
+The computer guessed: 578
+They got 0 bulls and 1 cows
+---
+Round 5
+Marko guessed: 012
+They got 0 bulls and 1 cows
+The computer guessed: 327
+They got 1 bulls and 0 cows
+---
+Round 6
+Marko guessed: 418
+They got 0 bulls and 0 cows
+The computer guessed: 709
+They got 0 bulls and 0 cows
+---
+Round 7
+Marko guessed: 406
+They got 0 bulls and 2 cows
+The computer guessed: 253
+They got 0 bulls and 2 cows
+---
+Game ended in a draw.

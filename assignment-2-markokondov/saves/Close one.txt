@@ -1,0 +1,42 @@
+Bulls and Cows game - Marko vs the computer
+Selected difficulty: Hard
+Your code: 1234
+Computer's code: 6312
+---
+Round 1
+Marko guessed: 1234
+They got 0 bulls and 3 cows
+The computer guessed: 8931
+They got 1 bulls and 1 cows
+---
+Round 2
+Marko guessed: 2345
+They got 1 bulls and 1 cows
+The computer guessed: 5481
+They got 0 bulls and 2 cows
+---
+Round 3
+Marko guessed: 2301
+They got 1 bulls and 2 cows
+The computer guessed: 1952
+They got 1 bulls and 1 cows
+---
+Round 4
+Marko guessed: 2789
+They got 0 bulls and 1 cows
+The computer guessed: 7914
+They got 1 bulls and 1 cows
+---
+Round 5
+Marko guessed: 6321
+They got 2 bulls and 2 cows
+The computer guessed: 8712
+They got 0 bulls and 2 cows
+---
+Round 6
+Marko guessed: 3621
+They got 0 bulls and 4 cows
+The computer guessed: 1234
+They got 4 bulls and 0 cows
+The computer won!
+---
